@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+.container{
+	padding-top: 10px;
+	height:100%;
+	display: block;
+	/*background-color: #e49b1ca8;*/
+}
+body,html {
+  height: 100%;
+}
+/*label{
+	color:#FFF;
+}*/

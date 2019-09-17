@@ -1,0 +1,27 @@
+ <header class="navbar navbar-light navbar-fixed-top navbar-expand-lg"> 
+  
+   <a class="navbar-brand" [routerLink]="['/']" (click)="navbarCollapsed = true">My Angular App</a> 
+  
+   <button class="navbar-toggler navbar-toggler-right" type="button" (click)="navbarCollapsed = !navbarCollapsed" 
+           [attr.aria-expanded]="!navbarCollapsed" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"> 
+     <span class="navbar-toggler-icon"></span> 
+   </button> 
+  
+   <div class="navbar-collapse top-menu" [ngbCollapse]="navbarCollapsed" id="navbarContent"> 
+     <ul class="navbar-nav mr-auto"> 
+       <li class="nav-item" [routerLinkActive]="['active']"> 
+         <a class="nav-link" [routerLink]="['/shops']" (click)="navbarCollapsed = true">Shops</a> 
+       </li> 
+       <li class="nav-item" [routerLinkActive]="['active']"> 
+         <a class="nav-link" [routerLink]="['/shopping-history']" (click)="navbarCollapsed = true">History</a> 
+       </li> 
+        <li class="nav-item"> 
+         <a class="nav-link" [routerLink]="['/logout']" (click)="navbarCollapsed = true">Logout</a> 
+       </li> 
+       <li class="nav-item d-lg-none" *ngFor="let component of components" [routerLinkActive]="['active']"> 
+         <a class="nav-link" [routerLink]="['/components', component.toLowerCase()]" (click)="navbarCollapsed = true">{{ component }}</a> 
+       </li> 
+     </ul> 
+  
+   </div> 
+ </header> 
