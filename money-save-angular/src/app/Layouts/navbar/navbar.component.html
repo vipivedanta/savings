@@ -10,10 +10,10 @@
    <div class="navbar-collapse top-menu" [ngbCollapse]="navbarCollapsed" id="navbarContent"> 
      <ul class="navbar-nav mr-auto nav-ul"> 
        <li class="nav-item" [routerLinkActive]="['active']"> 
-         <a class="nav-link" [routerLink]="['/shops']" (click)="navbarCollapsed = true">Shops</a> 
+         <a class="nav-link" [routerLink]="['/dashboard/shops']" (click)="navbarCollapsed = true">Shops</a> 
        </li> 
        <li class="nav-item" [routerLinkActive]="['active']"> 
-         <a class="nav-link" [routerLink]="['/shopping-history']" (click)="navbarCollapsed = true">History</a> 
+         <a class="nav-link" [routerLink]="['/dashboard/shopping-history']" (click)="navbarCollapsed = true">History</a> 
        </li> 
         <li class="nav-item"> 
          <a class="nav-link" [routerLink]="['/logout']" (click)="navbarCollapsed = true">Logout</a> 
