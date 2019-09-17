@@ -10,6 +10,7 @@ import { LogoComponent } from './Layouts/logo/logo.component';
 import { LoginComponent } from './User/login/login.component';
 import { DashboardComponent } from './User/dashboard/dashboard.component';
 import { NavbarComponent } from './Layouts/navbar/navbar.component';
+import { ShopListComponent } from './User/Shops/shop-list/shop-list.component';
 
 const routes:Routes = [
 	{ path : '', component : HomeComponent },
@@ -24,7 +25,8 @@ const routes:Routes = [
     HomeComponent,
     LogoComponent,
     DashboardComponent,
-    NavbarComponent
+    NavbarComponent,
+    ShopListComponent
   ],
   imports: [
     BrowserModule,
